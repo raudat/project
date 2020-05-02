@@ -1,16 +1,25 @@
 import React from 'react';
 import './style.css';
-import Card from '../../components/UI/Card';
 
-const Home  = props => {
-    
-    return (
+/**
+* @author
+* @function Header
+**/
+
+const Header = (props) => {
+  return(
+    <header className="header">
+        <nav className="headerMenu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
         <div>
-        <Card>
-            
-        </Card>
+         movie links
         </div>
-    );
-}
+    </header>
+   )
 
-export default Home;
+ }
+
+export default Header
