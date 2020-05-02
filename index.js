@@ -3,23 +3,16 @@ import './style.css';
 
 /**
 * @author
-* @function Header
+* @function Card
 **/
 
-const Header = (props) => {
+const Card = (props) => {
   return(
-    <header className="header">
-        <nav className="headerMenu">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-        </nav>
-        <div>
-         movie links
-        </div>
-    </header>
+    <div className="card" >
+      {props.children}
+    </div>
    )
 
  }
 
-export default Header
+export default Card
